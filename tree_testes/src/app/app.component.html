@@ -1,7 +1,15 @@
-<app-tree-view (noClicadoEvent)="recebeNoClicadoTree($event)"></app-tree-view>
+<!--<app-tree-view (noClicadoEvent)="recebeNoClicadoTree($event)"></app-tree-view>-->
 <router-outlet></router-outlet>
 
-
-<h5>No Componente Pai via @OutPut</h5>
-
-<p>{{noClicado?.description}}</p>
+  <h1 id="tableLabel">Weather forecast</h1>
+  
+  <p>This component demonstrates fetching data from the server.</p>
+  
+  <p *ngIf="!ELEMENT_DATA"><em>Loading...</em></p>
+  
+  
+  <table class='table table-striped'>
+    <tr focoDiretiva *ngFor="let elem of ELEMENT_DATA">
+      <td>{{ elem.name }}</td>
+    </tr>
+  </table>

@@ -8,11 +8,13 @@ import { MatTreeModule } from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { TreeViewComponent } from './shared/tree-view/tree-view.component';
+import { FocoDirective } from './teclado.diretiva';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TreeViewComponent
+    TreeViewComponent,
+    FocoDirective,
   ],
   imports: [
     BrowserModule,
